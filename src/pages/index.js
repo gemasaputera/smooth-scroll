@@ -3,6 +3,8 @@ import SideBar from 'components/SideBar';
 import Navbar from 'components/Navbars';
 import HeroSection from 'components/HeroSection';
 import InfoSection from 'components/InfoSection';
+import ServicesSection from 'components/ServicesSection';
+import { data } from 'components/InfoSection/Data';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,14 @@ const Home = () => {
       <SideBar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection />
-      <InfoSection />
+      <ServicesSection />
+      {
+        data.map((item, index)=>{
+          return(
+            <InfoSection {...item.value} key={index} />
+          );
+        })
+      }
     </>
   )
 }

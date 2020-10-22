@@ -97,7 +97,7 @@ export const NavLogo = styled(LinkRouter)`
   export const NavBtnLink = styled(LinkRouter)`
     border-radius: 50px;
     background: #01bf71;
-    white-scpae: nowrap;
+    white-space: nowrap;
     padding: 10px 22px;
     color: #010606;
     font-size: 16px;

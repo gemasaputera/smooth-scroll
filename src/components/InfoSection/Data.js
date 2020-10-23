@@ -2,6 +2,7 @@ export const data = [
   { 
     value : {
       id: 'about',
+      routeTo: 'home',
       lightBg: false,
       lightText: true,
       topLine: 'Premium Bank',
@@ -19,6 +20,7 @@ export const data = [
   {
     value : {
       id: 'discover',
+      routeTo: 'home',
       lightBg: true,
       lightText: false,
       topLine: 'Unlimited Access',
@@ -36,6 +38,7 @@ export const data = [
   {
     value : {
       id: 'signup',
+      routeTo: 'home',
       lightBg: false,
       lightText: true,
       topLine: 'Join our Team',

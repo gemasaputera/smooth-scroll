@@ -17,7 +17,7 @@ import {
 
 const InfoSection = ({ id, lightBg, imgStart, topLine, lightText, 
   headLine, darkText, description, buttonLabel, img, alt, primary,
-  dark, dark2 }) => {
+  dark, dark2, routeTo }) => {
   return (
     <>
       <InfoContainer id={id} lightBg={lightBg}>
@@ -31,7 +31,7 @@ const InfoSection = ({ id, lightBg, imgStart, topLine, lightText,
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button to="home"
+                  <Button to={routeTo}
                     smooth
                     duration={500}
                     spy
